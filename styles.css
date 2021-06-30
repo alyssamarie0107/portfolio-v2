@@ -1,0 +1,150 @@
+/* hides the scrollbar */
+*::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* makes scrollbar invisible */
+}
+
+body {
+    font-family: Helvetica;
+    background-color: #374031;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+}
+
+span {
+    color: #F2C53D;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover,
+a:hover {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* navbar CSS */
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.social-container {
+    display: flex;
+    margin: 10px 165px 0 0;
+    /* background-color: sandybrown; */
+}
+
+.social-container>a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #cececeb9;
+}
+
+.social-container>a:nth-child(1),
+.social-container>a:nth-child(2) {
+    margin-right: 14px;
+}
+
+/* intro CSS */
+#intro {
+    color: white;
+    height: 93vh;
+    flex-direction: column;
+}
+
+#intro #line {
+    width: 55px;
+    height: 7.5px;
+    margin-top: 30px;
+    background: #F2C53D;
+}
+
+#intro #par-container {
+    margin: 40px 0 20px 0;
+}
+
+#intro #par-container>p {
+    line-height: 15px;
+}
+
+#intro #btn-container>button {
+    width: 154px;
+    height: 68px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    line-height: 36px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#intro #btn-container>button:nth-child(1) {
+    background-color: #cecece54;
+}
+
+#intro #btn-container>a {
+    color: white;
+    cursor: pointer;
+    border-bottom: 2.3px solid #F2C53D;
+    padding-bottom: 3px;
+}
+
+/* about CSS */
+#about {
+    background-color: #F2F2F2;
+}
+
+#about #left-container {
+    margin: 50px;
+    /* background-color: teal; */
+}
+
+/* #about #right-container {
+    background-color: forestgreen;
+} */
+
+#about #right-container>p {
+    width: 42vw;
+    line-height: 32px;
+}
