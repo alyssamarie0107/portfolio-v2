@@ -1,9 +1,7 @@
 /* hides the scrollbar */
 *::-webkit-scrollbar {
-    width: 0px;
-    /* remove scrollbar space */
-    background: transparent;
-    /* makes scrollbar invisible */
+    width: 0px; /* remove scrollbar space */
+    background: transparent; /* makes scrollbar invisible */
 }
 
 body {
@@ -31,11 +29,16 @@ h3 {
 }
 
 h4 {
+    color: #374031;
+    width: 450px;
     font-size: 18px;
+    text-align: center;
+    margin: 15px 0 15px 0;
 }
 
 p {
     font-size: 18px;
+    line-height: 32px;
 }
 
 span {
@@ -55,6 +58,37 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* footer CSS */
+footer {
+    color: white;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #374031;
+}
+
+footer>a {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a:hover {
+    color: white;
+}
+
+footer #line {
+    width: 75vw;
+    height: 0.98px;
+    background: #F2C53D;
+}
+
+footer>p {
+    font-size: 13px;
 }
 
 /* navbar CSS */
@@ -90,27 +124,30 @@ section {
     color: white;
     height: 93vh;
     flex-direction: column;
+    /* background-color: aqua; */
 }
 
-#intro #line {
+#intro>div>h1 {
+    width: 60vw;
+    /* background-color: teal; */
+}
+
+.line {
     width: 55px;
-    height: 7.5px;
-    margin-top: 30px;
+    height: 7.2px;
+    margin: 30px 0 40px 0;
     background: #F2C53D;
 }
 
-#intro #par-container {
-    margin: 40px 0 20px 0;
-}
-
-#intro #par-container>p {
-    line-height: 15px;
+#intro>div>p {
+    width: 60vw;
+    margin-bottom: 30px;
+    /* background-color: green; */
 }
 
 #intro #btn-container>button {
     width: 154px;
     height: 68px;
-    margin: 5px;
     border: none;
     border-radius: 20px;
     line-height: 36px;
@@ -120,6 +157,7 @@ section {
 }
 
 #intro #btn-container>button:nth-child(1) {
+    margin-right: 20px;
     background-color: #cecece54;
 }
 
@@ -132,19 +170,147 @@ section {
 
 /* about CSS */
 #about {
+    padding: 60px 0 60px 0;
     background-color: #F2F2F2;
+    /* background-color: tan; */
 }
 
 #about #left-container {
-    margin: 50px;
+    margin: 40px;
     /* background-color: teal; */
 }
 
-/* #about #right-container {
-    background-color: forestgreen;
-} */
+#about #right-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    /* background-color: forestgreen; */
+}
+
+#about #right-container>h1,
+#projects>h1,
+#contact>h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: thin;
+    -webkit-text-stroke-color: #F2C53D;
+    -webkit-text-fill-color: transparent;
+}
+
+#about #right-container>h2 {color: #374031;}
 
 #about #right-container>p {
     width: 42vw;
-    line-height: 32px;
+}
+
+/* projects CSS */
+#projects {
+    background-color: #374031;
+}
+
+/* contact CSS */
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 60px 0;
+    background-color: #F2F2F2;
+}
+
+form {
+    width: 55vw;
+    padding: 40px 20px 40px 20px;
+    /* background-color: #374031; */
+}
+
+.form-group label {
+    font-size: 16px;
+}
+
+.form-group input {
+    height: 50px;
+    border-radius: 13px;
+    border: 1px solid #949494;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 2px solid #374031;
+}
+
+.form-group textarea {
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 1px solid #949494;
+    resize: none;
+}
+
+#contact #btn-container {
+    text-align: center;
+}
+
+.btn {
+    width: 110px;
+    height: 55px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Helvetica;
+    line-height: 36px;
+    cursor: pointer;
+    background-color: #374031;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    background-color: #374031;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* responsive CSS */
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    #intro>div>h1,
+    #intro>div>p {
+        width: 85vw;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about #left-container>img {
+        width: 350px;
+        height: 350px;
+    }
+
+    #about #right-container {
+        width: 100vw;
+        align-items: center;
+    }
+
+    #about #right-container>p {
+        width: 90vw;
+    }
+
+    form {
+        width: 80vw;
+    }
 }
