@@ -1,7 +1,9 @@
 /* hides the scrollbar */
 *::-webkit-scrollbar {
-    width: 0px; /* remove scrollbar space */
-    background: transparent; /* makes scrollbar invisible */
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* makes scrollbar invisible */
 }
 
 body {
@@ -59,7 +61,6 @@ footer {
     justify-content: center;
     background-color: #374031;
 }
-
 
 footer .social-container {
     margin: 0 0 20px 0;

@@ -1,7 +1,9 @@
 /* hides the scrollbar */
 *::-webkit-scrollbar {
-    width: 0px; /* remove scrollbar space */
-    background: transparent; /* makes scrollbar invisible */
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* makes scrollbar invisible */
 }
 
 body {
@@ -72,6 +74,7 @@ footer {
 
 footer>a {
     color: white;
+    font-size: 14px;
     text-align: center;
     margin: 30px 0 30px 0;
 }
@@ -196,7 +199,9 @@ footer>p {
     -webkit-text-fill-color: transparent;
 }
 
-#about #right-container>h2 {color: #374031;}
+#about #right-container>h2 {
+    color: #374031;
+}
 
 #about #right-container>p {
     width: 42vw;
