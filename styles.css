@@ -63,7 +63,6 @@ section {
 /* footer CSS */
 footer {
     color: white;
-    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +73,7 @@ footer {
 footer>a {
     color: white;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 30px 0 30px 0;
 }
 
 a:hover {
@@ -87,8 +86,14 @@ footer #line {
     background: #F2C53D;
 }
 
+footer .social-container {
+    margin: 0 0 20px 0;
+    /* background-color: aqua; */
+}
+
 footer>p {
     font-size: 13px;
+    margin-top: 20px;
 }
 
 /* navbar CSS */
@@ -99,19 +104,8 @@ footer>p {
 }
 
 .social-container {
-    display: flex;
-    margin: 10px 165px 0 0;
+    margin: 5px 120px 0 0;
     /* background-color: sandybrown; */
-}
-
-.social-container>a {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: #cececeb9;
 }
 
 .social-container>a:nth-child(1),
