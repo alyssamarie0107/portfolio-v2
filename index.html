@@ -122,7 +122,6 @@
       <!-- using boostrap for form and formspark for sending form data to email -->
       <!-- using reCAPTCHA v2 for spam protection -->
       <form method="POST" action="https://submit-form.com/9dKxOI1q">
-        <div class="g-recaptcha" data-sitekey="6LdIoJYbAAAAAHbZflNzydXM-H-_Nnmww2qq2T2M"></div>
         <input type="hidden" name="_redirect"
           value="https://lysscodes.com/pages/thank-you"/>
         <!-- disable formspark's default behavior of appending submission entries to custom redirect URL -->
@@ -154,6 +153,10 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" class="form-control" required
             placeholder="Say hello! &#128075;&#127996;"></textarea>
+        </div>
+
+        <div id="g-recaptcha-container">
+          <div class="g-recaptcha" data-sitekey="6LdIoJYbAAAAAHbZflNzydXM-H-_Nnmww2qq2T2M"></div>
         </div>
 
         <div id="btn-container">

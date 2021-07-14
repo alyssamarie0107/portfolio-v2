@@ -245,6 +245,12 @@ form {
     resize: none;
 }
 
+#g-recaptcha-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 #contact #btn-container {
     text-align: center;
 }
