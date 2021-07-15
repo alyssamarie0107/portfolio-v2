@@ -10,7 +10,7 @@
             const targetID = e.target.getAttribute('href');
             const targetAnchor = document.querySelector(targetID);
 
-            const originalTop = Math.floor(targetAnchor.getBoundingClientRect().top - 20);
+            const originalTop = Math.floor(targetAnchor.getBoundingClientRect().top);
             window.scrollBy({top:originalTop, left:0, behavior: 'smooth'});
             console.log(originalTop);
         });
