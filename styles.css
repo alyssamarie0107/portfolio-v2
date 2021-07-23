@@ -171,17 +171,17 @@ footer>p {
     background-color: #F2F2F2;
 }
 
-#about #top-container {
+#top-container {
     margin: 40px 0 40px 0;
     /* background-color: teal; */
 }
 
-#about #top-container>img {
+#top-container>img {
     width: 350px;
     height: 320px;
 }
 
-#about #bottom-container {
+#bottom-container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -189,7 +189,7 @@ footer>p {
     /* background-color: forestgreen; */
 }
 
-#about #bottom-container>h1,
+#bottom-container>h1,
 #projects>h1,
 #contact>h1 {
     font-size: 80px;
@@ -199,11 +199,11 @@ footer>p {
     -webkit-text-fill-color: transparent;
 }
 
-#about #bottom-container>h2 {
+#bottom-container>h2 {
     color: #374031;
 }
 
-#about #bottom-container>p {
+#bottom-container>p {
     width: 65vw;
 }
 
@@ -216,36 +216,58 @@ footer>p {
 
 #projects>h2 {
     color: white;
-    margin-top: 20px;
+}
+
+#projects #web-header {
+    margin-top: 30px;
+}
+
+#projects #mobile-header {
+    margin-top: 75px;
 }
 
 .project-container {
     display: flex;
-    width: 800px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.project-img-container {
-    width: 50vw;
+.project-img-container>img {
+    width: 40vw;
 }
 
 .project-info-container {
-    width: 50vw;
+    width: 40vw;
     color: white;
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
+    /* background-color: blue; */
 }
 
-.project-info-container>a {
-    border: 1px solid #F2C53D;
-    border-radius: 20px;
-    line-height: 36px;
+.project-info-container>p>a {
     color: white;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 12px;
+}
+
+.lang-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 8px;
+    /* background-color: aqua; */
+}
+
+.lang-container>li {
+    width: 70px;
+    color: white;
+    font-size: 13px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #F2C53D;
+    border-radius: 10px;
+    margin: 3px;
 }
 
 /* contact CSS */
@@ -329,7 +351,7 @@ form {
 /* responsive CSS */
 @media (max-width: 1280px) {
     h1 {
-        font-size: 50px;
+        font-size: 48px;
     }
 
     h4 {
