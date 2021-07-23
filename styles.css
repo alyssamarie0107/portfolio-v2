@@ -39,7 +39,7 @@ h4 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
 }
 
@@ -79,6 +79,10 @@ footer>a {
     margin: 30px 0 30px 0;
 }
 
+footer>a:hover {
+    color: white;
+}
+
 footer #line {
     width: 75vw;
     height: 0.98px;
@@ -97,19 +101,19 @@ footer>p {
 
 /* navbar CSS */
 .navbar-nav .nav-item .nav-link {
-    color: black;
+
     font-size: 15px;
     line-height: 20px;
 }
 
 .social-container {
-    margin: 5px 120px 0 0;
+    margin: 5px 100px 0 0;
     /* background-color: sandybrown; */
 }
 
 .social-container>a:nth-child(1),
 .social-container>a:nth-child(2) {
-    margin-right: 14px;
+    margin-right: 8px;
 }
 
 /* intro CSS */
@@ -163,29 +167,29 @@ footer>p {
 
 /* about CSS */
 #about {
-    padding: 60px 0 60px 0;
+    flex-direction: column;
     background-color: #F2F2F2;
-    /* background-color: tan; */
 }
 
-#about #left-container {
-    margin: 40px;
+#about #top-container {
+    margin: 40px 0 40px 0;
     /* background-color: teal; */
 }
 
-#about #left-container>img {
-    width: 450px;
-    height: 420px;
+#about #top-container>img {
+    width: 350px;
+    height: 320px;
 }
 
-#about #right-container {
+#about #bottom-container {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    margin: 40px;
+    margin-bottom: 40px;
     /* background-color: forestgreen; */
 }
 
-#about #right-container>h1,
+#about #bottom-container>h1,
 #projects>h1,
 #contact>h1 {
     font-size: 80px;
@@ -195,12 +199,12 @@ footer>p {
     -webkit-text-fill-color: transparent;
 }
 
-#about #right-container>h2 {
+#about #bottom-container>h2 {
     color: #374031;
 }
 
-#about #right-container>p {
-    width: 42vw;
+#about #bottom-container>p {
+    width: 65vw;
 }
 
 /* projects CSS */
@@ -334,24 +338,19 @@ form {
 
     #intro>div>h1,
     #intro>div>p {
-        width: 90vw;
+        width: 95vw;
+        /* background-color: #3df255; */
     }
 
     #about {
         flex-direction: column;
     }
 
-    #about #left-container>img {
-        width: 350px;
-        height: 320px;
-    }
-
-    #about #right-container {
+    #about #bottom-container {
         width: 100vw;
-        align-items: center;
     }
 
-    #about #right-container>p {
+    #about #bottom-container>p {
         width: 90vw;
     }
 
