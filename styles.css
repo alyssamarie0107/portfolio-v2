@@ -236,12 +236,12 @@ footer>p {
 }
 
 .project-img-container>img {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
 }
 
 .project-info-container {
-    width: 230px;
+    width: 200px;
     color: white;
     display: flex;
     text-align: center;
