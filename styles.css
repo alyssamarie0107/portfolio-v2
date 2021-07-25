@@ -231,11 +231,11 @@ footer>p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.project-img-container>img {
-    width: 230px;
+.project-img-container {
+    background-color: white;
 }
 
-.project-img-container-mobile>img {
+.project-img-container>img {
     width: 220px;
     height: 220px;
 }
@@ -251,26 +251,19 @@ footer>p {
     /* background-color: blue; */
 }
 
-#mobile-info-container-1,
-#mobile-info-container-2 {
-    width: 220px;
-}
-
 .lang-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0;
     list-style-type: none;
-    margin-bottom: 8px;
     /* background-color: aqua; */
 }
 
 .lang-container>li {
-    width: 50px;
     color: white;
-    font-size: 8px;
-    padding: 5px;
+    font-size: 12px;
+    padding: 8px;
     text-align: center;
     border: 1px solid #F2C53D;
     border-radius: 10px;
@@ -278,13 +271,13 @@ footer>p {
 }
 
 .project-btn-container>a {
-    padding: 6px;
+    padding: 10px;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #cecece54;
 }
 
@@ -370,10 +363,6 @@ form {
 @media (max-width: 1280px) {
     h1 {
         font-size: 48px;
-    }
-
-    h3 {
-        font-size: 14px;
     }
 
     h4 {
