@@ -232,11 +232,16 @@ footer>p {
 }
 
 .project-img-container>img {
-    width: 40vw;
+    width: 230px;
+}
+
+.project-img-container-mobile>img {
+    width: 220px;
+    height: 220px;
 }
 
 .project-info-container {
-    width: 40vw;
+    width: 230px;
     color: white;
     display: flex;
     text-align: center;
@@ -246,19 +251,9 @@ footer>p {
     /* background-color: blue; */
 }
 
-.project-btn-container {
-    margin-top: 10px;
-}
-
-.project-btn-container>a {
-    width: 100px;
-    padding: 15px 20px 15px 20px;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: #cecece54;
+#mobile-info-container-1,
+#mobile-info-container-2 {
+    width: 220px;
 }
 
 .lang-container {
@@ -267,19 +262,30 @@ footer>p {
     flex-wrap: wrap;
     padding: 0;
     list-style-type: none;
-    margin-top: 8px;
+    margin-bottom: 8px;
     /* background-color: aqua; */
 }
 
 .lang-container>li {
-    width: 70px;
+    width: 50px;
     color: white;
-    font-size: 13px;
-    line-height: 36px;
+    font-size: 8px;
+    padding: 5px;
     text-align: center;
     border: 1px solid #F2C53D;
     border-radius: 10px;
-    margin: 3px;
+    margin: 2px;
+}
+
+.project-btn-container>a {
+    padding: 6px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #cecece54;
 }
 
 /* contact CSS */
@@ -364,6 +370,10 @@ form {
 @media (max-width: 1280px) {
     h1 {
         font-size: 48px;
+    }
+
+    h3 {
+        font-size: 14px;
     }
 
     h4 {
