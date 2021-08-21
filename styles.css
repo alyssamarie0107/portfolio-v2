@@ -376,12 +376,6 @@ form {
         width: 85vw;
     }
 
-    #intro>div>h1,
-    #intro>div>p {
-        width: 95vw;
-        /* background-color: #3df255; */
-    }
-
     #about {
         flex-direction: column;
     }
@@ -405,5 +399,13 @@ form {
 
     form {
         width: 95vw;
+    }
+}
+
+@media (max-width: 992px) {
+    #intro>div>h1,
+    #intro>div>p {
+        width: 95vw;
+        /* background-color: #3df255; */
     }
 }
