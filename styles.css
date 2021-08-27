@@ -1,14 +1,12 @@
 /* hides the scrollbar */
 *::-webkit-scrollbar {
     width: 0px;
-    /* remove scrollbar space */
     background: transparent;
-    /* makes scrollbar invisible */
 }
 
 body {
     font-family: Helvetica;
-    background-color: #374031;
+    background-color: #4a5742;
 }
 
 h1,
@@ -31,7 +29,7 @@ h3 {
 }
 
 h4 {
-    color: #374031;
+    color: #4a5742;
     width: 45vw;
     font-size: 18px;
     text-align: center;
@@ -51,7 +49,6 @@ button:focus {
     outline: none;
 }
 
-button:hover,
 a:hover {
     text-decoration: none;
 }
@@ -62,56 +59,23 @@ section {
     justify-content: center;
 }
 
-/* footer CSS */
-footer {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #374031;
-}
-
-footer>a {
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    margin: 20px 0 20px 0;
-}
-
-footer>a:hover {
-    color: white;
-}
-
-footer #line {
-    width: 75vw;
-    height: 0.98px;
-    background: #F2C53D;
-}
-
-footer .social-container {
-    margin: 0 0 20px 0;
-    /* background-color: aqua; */
-}
-
-footer>p {
-    font-size: 13px;
-}
-
-footer>#par-1 {
-    margin-top: 20px;
-}
-
 /* navbar CSS */
 .navbar-nav .nav-item .nav-link {
-
+    color: white;
     font-size: 15px;
     line-height: 20px;
 }
 
+.navbar-nav .nav-item .nav-link:hover {
+    color: #F2C53D;
+}
+
+.navbar-nav .nav-item .nav-link:focus {
+    color: white;
+}
+
 .social-container {
     margin: 5px 100px 0 0;
-    /* background-color: sandybrown; */
 }
 
 .social-container>a:nth-child(1),
@@ -122,14 +86,16 @@ footer>#par-1 {
 /* intro CSS */
 #intro {
     color: white;
-    height: 93vh;
+    margin-top: 80px;
     flex-direction: column;
-    /* background-color: aqua; */
+}
+
+#intro>div {
+    padding: 90px;
 }
 
 #intro>div>h1 {
     width: 60vw;
-    /* background-color: teal; */
 }
 
 .line {
@@ -145,27 +111,28 @@ footer>#par-1 {
     /* background-color: green; */
 }
 
-#intro #btn-container>a:nth-child(1) {
+#intro #link-container>a:nth-child(1) {
     border: none;
     border-radius: 20px;
     line-height: 36px;
     color: white;
     cursor: pointer;
     font-weight: bold;
-    padding: 25px;
+    padding: 20px;
     margin-right: 20px;
     background-color: #cecece54;
+    transition: color 2s;
 }
 
-#intro #btn-container>a {
+#intro #link-container>a:nth-child(1):hover {
+    background-color: #f2c53d79;
+}
+
+#intro #link-container>a:nth-child(2) {
     color: white;
     cursor: pointer;
     border-bottom: 2.3px solid #F2C53D;
     padding-bottom: 3px;
-}
-
-#intro #btn-container>a:hover {
-    color: white;
 }
 
 /* about CSS */
@@ -175,13 +142,12 @@ footer>#par-1 {
 }
 
 #top-container {
-    margin: 40px 0 40px 0;
-    /* background-color: teal; */
+    margin-bottom: 40px;
 }
 
 #top-container>img {
     width: 350px;
-    height: 320px;
+    height: 330px;
 }
 
 #bottom-container {
@@ -189,7 +155,6 @@ footer>#par-1 {
     align-items: center;
     flex-direction: column;
     margin-bottom: 40px;
-    /* background-color: forestgreen; */
 }
 
 #bottom-container>h1,
@@ -203,18 +168,17 @@ footer>#par-1 {
 }
 
 #bottom-container>h2 {
-    color: #374031;
+    color: #4a5742;
 }
 
 #bottom-container>p {
-    width: 65vw;
+    width: 75vw;
 }
 
 /* projects CSS */
 #projects {
     flex-direction: column;
-    padding: 60px 0 100px 0;
-    background-color: #374031;
+    background-color: #4a5742;
 }
 
 #projects>h2 {
@@ -225,7 +189,8 @@ footer>#par-1 {
     margin-top: 30px;
 }
 
-#projects #mobile-header {
+#projects #mobile-header,
+#projects #other-header {
     margin-top: 75px;
 }
 
@@ -251,7 +216,6 @@ footer>#par-1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: blue; */
 }
 
 .lang-container {
@@ -260,7 +224,6 @@ footer>#par-1 {
     flex-wrap: wrap;
     padding: 0;
     list-style-type: none;
-    /* background-color: aqua; */
 }
 
 .lang-container>li {
@@ -287,14 +250,12 @@ footer>#par-1 {
 /* contact CSS */
 #contact {
     flex-direction: column;
-    padding: 60px 0 60px 0;
     background-color: #F2F2F2;
 }
 
-form {
+#contact form {
     width: 55vw;
     padding: 40px 20px 40px 20px;
-    /* background-color: #374031; */
 }
 
 .form-group label {
@@ -314,7 +275,7 @@ form {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: 2px solid #374031;
+    border: 2px solid #4a5742;
 }
 
 .form-group textarea {
@@ -347,12 +308,12 @@ form {
     font-family: Helvetica;
     line-height: 36px;
     cursor: pointer;
-    background-color: #374031;
+    background-color: #4a5742;
     margin-top: 40px;
 }
 
 .btn:hover {
-    background-color: #374031;
+    background-color: #4a5742;
 }
 
 .btn:focus,
@@ -360,6 +321,18 @@ form {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+/* footer CSS */
+footer {
+    color: white;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+footer>p {
+    margin-left: 100px;
 }
 
 /* responsive CSS */
