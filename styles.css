@@ -138,7 +138,7 @@ section {
 /* about CSS */
 #about {
     flex-direction: column;
-    background-color: #F2F2F2;
+    background-color: white;
 }
 
 #top-container {
@@ -250,7 +250,7 @@ section {
 /* contact CSS */
 #contact {
     flex-direction: column;
-    background-color: #F2F2F2;
+    background-color: white;
 }
 
 #contact form {
@@ -327,6 +327,7 @@ section {
 footer {
     color: white;
     display: flex;
+    align-items: center;
     margin-bottom: 20px;
     justify-content: space-between;
 }
@@ -380,5 +381,14 @@ footer>p {
     #intro>div>p {
         width: 95vw;
         /* background-color: #3df255; */
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer>p,
+    footer .social-container {
+        margin: 0 0 20px 0;
     }
 }
