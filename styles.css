@@ -1,3 +1,8 @@
+* {
+    /* this fixed svg overflow */
+    overflow-x: hidden;
+}
+
 /* hides the scrollbar */
 *::-webkit-scrollbar {
     width: 0px;
