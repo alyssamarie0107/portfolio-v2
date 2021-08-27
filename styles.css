@@ -116,6 +116,11 @@ section {
     /* background-color: green; */
 }
 
+#intro #link-container {
+    padding: 15px 0 15px;
+    /* background-color: teal; */
+}
+
 #intro #link-container>a:nth-child(1) {
     border: none;
     border-radius: 20px;
