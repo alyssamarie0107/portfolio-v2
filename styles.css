@@ -5,9 +5,9 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: Helvetica;
     background-color: #4a5742;
-
 }
 
 h1,
