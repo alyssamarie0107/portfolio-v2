@@ -183,7 +183,8 @@ section {
     justify-content: space-between;
 }
 
-#left #technologies>ul {
+#left #technologies>ul,
+#projects .project-tech-stack{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -220,63 +221,63 @@ section {
     margin-top: 30px;
 }
 
-#projects #mobile-header,
-#projects #other-header {
-    margin-top: 75px;
+#projects #projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.project-container {
-    display: flex;
+.project-card {
+    width: 35vw;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.project-img-container {
-    background-color: white;
+.project-card .project-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
 }
 
-.project-img-container>img {
-    width: 300px;
-    height: 300px;
+.project-card .project-header>a>img {
+    width: 30px;
+    height: 30px;
+    transition: all 2s;
+    margin: 5px;
 }
 
-.project-info-container {
-    width: 300px;
+.project-card .project-header>a>img:hover {
+    transform: scale(0.8);
+}
+
+.project-card .project-info {
     color: white;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
-.lang-container {
+.project-card .project-info>h3 {
+    color: #F2C53D;
+    font-size: 25px;
+}
+
+.project-card .project-tech-stack{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 0;
-    list-style-type: none;
-}
-
-.lang-container>li {
-    color: white;
     font-size: 12px;
-    padding: 8px;
-    text-align: center;
-    border: 1px solid #F2C53D;
-    border-radius: 10px;
-    margin: 2px;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.project-btn-container>a {
+.project-card .project-tech-stack>li {
+    color: rgba(255, 255, 255, 0.61);
     padding: 10px;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    background-color: #cecece54;
 }
+
+/* #projects #mobile-header,
+#projects #other-header {
+    margin-top: 75px;
+} */
+
 
 /* contact CSS */
 #contact {
@@ -364,6 +365,8 @@ footer {
 }
 
 footer>p {
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
     margin-left: 100px;
 }
 
@@ -420,6 +423,10 @@ footer>p {
     #intro>div>h1,
     #intro>div>p {
         width: 95vw;
+    }
+
+    .project-card {
+        width: 90vw;
     }
 
     /* responsive footer CSS */
