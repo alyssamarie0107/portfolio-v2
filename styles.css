@@ -7,7 +7,7 @@
 body {
     font-family: Helvetica;
     background-color: #4a5742;
-    overflow-x: hidden;
+
 }
 
 h1,
@@ -30,8 +30,8 @@ h3 {
 }
 
 h4 {
-    color: #4a5742;
     width: 45vw;
+    color: #4a5742;
     font-size: 18px;
     text-align: center;
     margin: 15px 0 15px 0;
@@ -109,12 +109,10 @@ section {
 #intro>div>p {
     width: 60vw;
     margin-bottom: 50px;
-    /* background-color: green; */
 }
 
 #intro #link-container {
     padding: 15px 0 15px;
-    /* background-color: teal; */
 }
 
 #intro #link-container>a:nth-child(1) {
@@ -147,23 +145,7 @@ section {
     background-color: white;
 }
 
-#top-container {
-    margin-bottom: 40px;
-}
-
-#top-container>img {
-    width: 350px;
-    height: 330px;
-}
-
-#bottom-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
-
-#bottom-container>h1,
+#about>h1,
 #projects>h1,
 #contact>h1 {
     font-size: 80px;
@@ -173,12 +155,60 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
-#bottom-container>h2 {
+#about>h2 {
     color: #4a5742;
 }
 
-#bottom-container>p {
-    width: 75vw;
+#about-container {
+    display: flex;
+    align-items: center;
+}
+
+#left {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#left>img {
+    width: 350px;
+    height: 330px;
+}
+
+#left>p{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#left #technologies {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left #technologies>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#left #technologies>ul li::before {
+    content: "\2023";
+    color: #F2C53D;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+#right {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }
 
 /* projects CSS */
@@ -261,7 +291,7 @@ section {
 
 #contact form {
     width: 55vw;
-    padding: 40px 20px 40px 20px;
+    padding: 20px 20px 40px 20px;
 }
 
 .form-group label {
@@ -356,18 +386,25 @@ footer>p {
         width: 85vw;
     }
 
-    #about {
+    /* responsive about CSS */
+    #about-container {
         flex-direction: column;
     }
 
-    #about #bottom-container {
+    #about-container #left,
+    #about-container #right {
         width: 100vw;
     }
 
-    #about #bottom-container>p {
+    #about #right {
+        padding: 0;
+    }
+
+    #about #right>p {
         width: 90vw;
     }
 
+    /* responsive project CSS */
     .project-img-container>img {
         width: 200px;
         height: 200px;
@@ -377,18 +414,20 @@ footer>p {
         width: 200px;
     }
 
+    /* responsive contact CSS */
     #contact form {
         width: 95vw;
     }
 }
 
 @media (max-width: 992px) {
+    /* responsive intro CSS */
     #intro>div>h1,
     #intro>div>p {
         width: 95vw;
-        /* background-color: #3df255; */
     }
 
+    /* responsive footer CSS */
     footer {
         flex-direction: column;
     }
