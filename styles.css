@@ -225,6 +225,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* background-color: salmon; */
 }
 
 .project-card {
@@ -233,6 +234,10 @@ section {
     padding: 20px;
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 187, 0, 0.2), 0 6px 20px 0 rgba(255, 187, 0, 0.19);
 }
 
 .project-card .project-header {
@@ -273,11 +278,10 @@ section {
     padding: 10px;
 }
 
-/* #projects #mobile-header,
+#projects #mobile-header,
 #projects #other-header {
     margin-top: 75px;
-} */
-
+}
 
 /* contact CSS */
 #contact {
