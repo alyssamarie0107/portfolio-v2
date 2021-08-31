@@ -179,8 +179,13 @@ section {
 
 #left #technologies {
     width: 250px;
+    padding: 20px;
     display: flex;
+    color: white;
     justify-content: space-between;
+    border: 1px solid #F2C53D;
+    border-radius: 8px;
+    background-color: #4a5742f3;
 }
 
 #left #technologies>ul,
@@ -225,7 +230,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color: salmon; */
 }
 
 .project-card {
