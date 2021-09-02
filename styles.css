@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
-  
+
 /* hides the scrollbar */
 *::-webkit-scrollbar {
     width: 0px;
