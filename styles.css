@@ -33,7 +33,7 @@ h4 {
     color: #4a5742;
     font-size: 18px;
     text-align: center;
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
 }
 
 p {
@@ -97,7 +97,7 @@ section {
 .line {
     width: 55px;
     height: 7.2px;
-    margin: 30px 0 40px 0;
+    margin: 30px 0 40px;
     background: #F2C53D;
 }
 
@@ -295,7 +295,7 @@ section {
 
 #contact form {
     width: 55vw;
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 40px;
 }
 
 .form-group label {
