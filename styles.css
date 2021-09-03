@@ -70,6 +70,8 @@ section {
     color: #FFF;
     font-size: 15px;
     line-height: 20px;
+    font-weight: lighter;
+    text-transform: uppercase;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
