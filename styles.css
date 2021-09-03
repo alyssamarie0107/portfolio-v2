@@ -12,7 +12,7 @@
 
 body {
     font-family: Helvetica;
-    background-color: #4a5742;
+    background-color: #697965;
 }
 
 h1,
@@ -36,7 +36,7 @@ h3 {
 
 h4 {
     width: 45vw;
-    color: #4a5742;
+    color: #697965;
     font-size: 18px;
     text-align: center;
     margin: 15px 0;
@@ -157,7 +157,7 @@ section {
 }
 
 #about>h2 {
-    color: #4a5742;
+    color: #697965;
 }
 
 #about-container {
@@ -191,7 +191,7 @@ section {
     justify-content: space-between;
     border: 1px solid #F2C53D;
     border-radius: 8px;
-    background-color: #4a5742f3;
+    background-color: #697965;
 }
 
 #left #technologies>ul,
@@ -221,7 +221,7 @@ section {
 /* projects CSS */
 #projects {
     flex-direction: column;
-    background-color: #4a5742;
+    background-color: #697965;
 }
 
 #projects>h2 {
@@ -321,7 +321,7 @@ section {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border: 2px solid #4a5742;
+    border: 2px solid #697965;
 }
 
 .form-group textarea {
@@ -354,12 +354,12 @@ section {
     font-family: Helvetica;
     line-height: 36px;
     cursor: pointer;
-    background-color: #4a5742;
+    background-color: #697965;
     margin-top: 40px;
 }
 
 .btn:hover {
-    background-color: #4a5742;
+    background-color: #F2C53D;
 }
 
 .btn:focus,
