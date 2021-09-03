@@ -115,31 +115,36 @@ section {
 }
 
 #intro #link-container {
-    padding: 15px 0 15px;
+    padding: 15px 0;
 }
 
-#intro #link-container>a:nth-child(1) {
-    border: none;
-    border-radius: 20px;
+#intro #link-container>a {
+    border-radius: 15px;
     line-height: 36px;
-    color: #FFF;
     cursor: pointer;
     font-weight: bold;
     padding: 20px;
     margin-right: 20px;
-    background-color: #cecece54;
-    transition: color 2s;
+    transition: color 2s;  
+}
+
+#intro #link-container>a:nth-child(1) {
+    color: #F2C53D;
+    border: 2px solid #F2C53D;
+    background-color: transparent;
 }
 
 #intro #link-container>a:nth-child(1):hover {
-    background-color: #f2c53d79;
+    background-color: #f2c53d1f;
 }
 
 #intro #link-container>a:nth-child(2) {
-    color: #FFF;
-    cursor: pointer;
-    border-bottom: 2.3px solid #F2C53D;
-    padding-bottom: 3px;
+    color: #697965;
+    background-color: #F2C53D;
+}
+
+#intro #link-container>a:nth-child(2):hover {
+    background-color: #f2c53dde;
 }
 
 /* about CSS */
@@ -345,7 +350,7 @@ section {
     height: 55px;
     color: #FFF;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: bold;
     font-family: Helvetica;
@@ -353,10 +358,6 @@ section {
     cursor: pointer;
     background-color: #697965;
     margin-top: 40px;
-}
-
-.btn:hover {
-    background-color: #F2C53D;
 }
 
 .btn:focus,
