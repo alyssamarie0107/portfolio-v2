@@ -143,10 +143,6 @@ section {
     background-color: #F2C53D;
 }
 
-#intro #link-container>a:nth-child(2):hover {
-    background-color: #f2c53dde;
-}
-
 /* about CSS */
 #about {
     flex-direction: column;
