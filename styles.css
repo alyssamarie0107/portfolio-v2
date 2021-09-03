@@ -185,13 +185,8 @@ section {
 
 #left #technologies {
     width: 250px;
-    padding: 20px;
     display: flex;
-    color: white;
     justify-content: space-between;
-    border: 1px solid #F2C53D;
-    border-radius: 8px;
-    background-color: #697965;
 }
 
 #left #technologies>ul,
